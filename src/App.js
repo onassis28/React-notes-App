@@ -3,7 +3,7 @@ import Notelist from './components/NoteList/Notelist'
 
 const App = () => {
   return (
-    <div><Notelist/></div>
+    <div className='app_container'><Notelist/></div>
   )
 }
 

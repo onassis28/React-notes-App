@@ -2,7 +2,7 @@ import React from 'react'
 import Notelist from './components/NoteList/Notelist'
 import { useState } from 'react';
 import {nanoid} from 'nanoid'
-import Addnote from './components/AddNote/Addnote';
+
 import './App.css'
 const App = () => {
   const[notes,setNotes]=useState([
@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div className='app_container'><Notelist notes= {notes}/>
-    <Addnote/>
+   
     </div>
   )
 }

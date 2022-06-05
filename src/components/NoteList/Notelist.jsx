@@ -1,6 +1,7 @@
 import React from 'react';
 import './notelist.css';
 import Note from '../Note/Note';
+import Addnote from '../AddNote/Addnote';
 
 const Notelist = ({ notes }) => {
 	console.log(notes);
@@ -10,7 +11,11 @@ const Notelist = ({ notes }) => {
 
 	return (
 		<>
-			<div className='noteslist_container container'>{renderNote}</div>;
+			<div className='noteslist_container '>
+				{renderNote}
+				<Addnote />
+			</div>
+			;
 		</>
 	);
 };

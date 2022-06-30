@@ -3,9 +3,13 @@
     margin-bottom: 0.8rem;
     border-radius: 0.7rem;
     padding: 1rem;
-    min-height: 170px;
+    max-height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+}
+.addnote_footer{
+    display: flex;
+    justify-content: space-between;
 }

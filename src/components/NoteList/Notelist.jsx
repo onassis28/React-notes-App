@@ -13,6 +13,7 @@ function Notelist({ notes }) {
     <>
       <div className="noteslist_container ">
         {renderNote}
+
         <Addnote />
       </div>
       ;

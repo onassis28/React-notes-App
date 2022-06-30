@@ -1,23 +1,23 @@
-import React from 'react';
-import './notelist.css';
-import Note from '../Note/Note';
-import Addnote from '../AddNote/Addnote';
+import React from "react";
+import "./notelist.css";
+import Note from "../Note/Note";
+import Addnote from "../AddNote/Addnote";
 
-const Notelist = ({ notes }) => {
-	console.log(notes);
-	const renderNote = notes.map((note) => {
-		return <Note key={note.id} text={note.text} date={note.date} />;
-	});
+function Notelist({ notes }) {
+  console.log(notes);
+  const renderNote = notes.map((note) => {
+    return <Note key={note.id} text={note.text} date={note.date} />;
+  });
 
-	return (
-		<>
-			<div className='noteslist_container '>
-				{renderNote}
-				<Addnote />
-			</div>
-			;
-		</>
-	);
-};
+  return (
+    <>
+      <div className="noteslist_container ">
+        {renderNote}
+        <Addnote />
+      </div>
+      ;
+    </>
+  );
+}
 
 export default Notelist;

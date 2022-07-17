@@ -3,6 +3,7 @@ import './note.css'
 import { MdDeleteForever } from 'react-icons/md'
 
 function Note({ Key, text, date, deletion, notes }) {
+  console.log(deletion)
   return (
     <div className="note_container">
       <span>{text}</span>

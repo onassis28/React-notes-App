@@ -1,9 +1,13 @@
 import React from 'react'
 import './addnote.css'
 import { useState } from 'react'
+import { nanoid } from 'nanoid'
 
 function Addnote({ onclick, notes }) {
-  console.log(onclick)
+  const date = new Date().toLocaleDateString()
+  const id = nanoid()
+  console.log(id)
+
   const [text, setText] = useState('')
   return (
     <div>
@@ -20,7 +24,7 @@ function Addnote({ onclick, notes }) {
         <div className="addnote_footer">
           <small>200 Remaining</small>
 
-          <button onClick={() => onclick(5, text, 5, notes)}>Save</button>
+          <button onClick={() => onclick(id, text, date, notes)}>Save</button>
         </div>
       </div>
     </div>

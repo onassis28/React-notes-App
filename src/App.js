@@ -24,15 +24,16 @@ function App() {
     },
   ])
 
-  const handleClick = () => {
-    setNotes([{ id: nanoid(), text: 'This is my first note', date: '15/04/2022' }])
+  const handleClick = (id, text, date, notes) => {
+    const newnotes = [...notes, { id, text, date }]
+    setNotes(newnotes)
   }
 
   return (
     <div className="app_container">
       <div className=" noteslist_container">
         <Notelist notes={notes} Onclick={handleClick} />
-        <Addnote />
+        <Addnote onclick={handleClick} notes={notes} />
       </div>
     </div>
   )

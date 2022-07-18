@@ -1,15 +1,29 @@
 .addnote_container{
     background: #e4db5a;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem;
     border-radius: 0.7rem;
     padding: 1rem;
-    max-height: 170px;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    
 
 }
 .addnote_footer{
     display: flex;
     justify-content: space-between;
+}
+
+button{
+    background: #d8d8d3;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }

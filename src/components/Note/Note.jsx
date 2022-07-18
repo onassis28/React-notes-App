@@ -6,7 +6,6 @@ function Note({ Key, text, date, deletion, notes }) {
   return (
     <div className="note_container">
       <span>{text}</span>
-
       <div className="note_footer">
         <small>{date}</small>
         <div onClick={() => deletion(Key, notes)}>

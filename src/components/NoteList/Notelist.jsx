@@ -20,7 +20,7 @@ function Notelist({ ondelete, notes }) {
   console.log(ondelete)
   return (
     <>
-      <div className="noteslist">{renderNote}</div>;
+      <div className="noteslist">{renderNote}</div>
     </>
   )
 }

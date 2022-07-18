@@ -22,8 +22,6 @@ function Addnote({ onclick, notes }) {
         </div>
 
         <div className="addnote_footer">
-          <small>200 Remaining</small>
-
           <button onClick={() => onclick(id, text, date, notes)}>Save</button>
         </div>
       </div>

@@ -20,10 +20,10 @@ function App() {
 
   return (
     <div className="app_container">
-      <div className=" noteslist_container">
+      <div className={notes.length === 0 ? 'noteblock' : null}>
         <Notelist notes={notes} ondelete={handleDelete} />
-        <Addnote onclick={handleClick} notes={notes} />
       </div>
+      <Addnote onclick={handleClick} notes={notes} />
     </div>
   )
 }
